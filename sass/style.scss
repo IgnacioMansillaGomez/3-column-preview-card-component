@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 375px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  .information {
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+    .img__sedan {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .title {
+      font-family: "Big Shoulders Display", sans-serif;
+      color: $Very-light-gray;
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+    .copy {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      color: $Transparent-white;
+      line-height: 27px;
+      padding-bottom: 25px;
+    }
+    .button__container {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      text-align: justify;
+      a {
+        text-decoration: none;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 10px 15px 10px 15px;
+        background: $Very-light-gray;
+        color: $Bright-orange;
+        &:hover {
+          border: 2px solid $Very-light-gray;
+          background: $Bright-orange;
+          color: $Very-light-gray;
+        }
+      }
+    }
+  }
+  .sedan {
+    background: $Bright-orange;
+    margin-top: 20px;
+  }
+  .suvs {
+    background: $Dark-cyan;
+    .img__suvs {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .button__container {
+      a {
+        color: $Dark-cyan;
+        &:hover {
+          background: $Dark-cyan;
+          color: $Very-light-gray;
+        }
+      }
+    }
+  }
+  .luxury {
+    background: $Very-dark-cyan;
+    .img__luxury {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .button__container {
+      a {
+        color: $Very-dark-cyan;
+        &:hover {
+          background: $Very-dark-cyan;
+          color: $Very-light-gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    max-width: 1440px;
+  }
+
+  .container {
+    width: 60%;
+    margin: 115px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .sedan {
+    background: $Bright-orange;
+    margin-top: 0 !important;
+  }
+}

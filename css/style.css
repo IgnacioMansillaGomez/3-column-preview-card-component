@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* ------------------------------- ### Primary ------------------------------ */
+/* ------------------------------- ### Neutral ------------------------------ */
+/* ------------------------------ (paragraphs) ------------------------------ */
+/* --------------------- (background, headings, buttons) -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 375px;
+  font-size: 15px;
+  background: #fff; }
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px; }
+  .container .information {
+    width: 100%;
+    padding: 30px;
+    text-align: left; }
+    .container .information .img__sedan {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .container .information .title {
+      font-family: "Big Shoulders Display", sans-serif;
+      color: #f2f2f2;
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 30px;
+      padding-top: 20px; }
+    .container .information .copy {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 27px;
+      padding-bottom: 25px; }
+    .container .information .button__container {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      text-align: justify; }
+      .container .information .button__container a {
+        text-decoration: none;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 10px 15px 10px 15px;
+        background: #f2f2f2;
+        color: #e38826; }
+        .container .information .button__container a:hover {
+          border: 2px solid #f2f2f2;
+          background: #e38826;
+          color: #f2f2f2; }
+  .container .sedan {
+    background: #e38826;
+    margin-top: 20px; }
+  .container .suvs {
+    background: #006970; }
+    .container .suvs .img__suvs {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .container .suvs .button__container a {
+      color: #006970; }
+      .container .suvs .button__container a:hover {
+        background: #006970;
+        color: #f2f2f2; }
+  .container .luxury {
+    background: #004241; }
+    .container .luxury .img__luxury {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .container .luxury .button__container a {
+      color: #004241; }
+      .container .luxury .button__container a:hover {
+        background: #004241;
+        color: #f2f2f2; }
+
+@media screen and (min-width: 800px) {
+  body {
+    max-width: 1440px; }
+
+  .container {
+    width: 60%;
+    margin: 115px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px; }
+
+  .sedan {
+    background: #e38826;
+    margin-top: 0 !important; } }
+
+/*# sourceMappingURL=style.css.map */
