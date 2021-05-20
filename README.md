@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://ignaciomansillagomez.github.io/3-column-preview-card-component/)
 
 ### Built with
 
